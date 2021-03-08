@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6584b306-77fb-446c-b1fd-0aba6d389842" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="onprimise-deploymentFlow" doc:id="5c4afe2a-a057-47b1-9e79-fb933b8dfde2" >
+		<http:listener doc:name="Listener" doc:id="8109ed80-eb54-41d8-b072-8391b1c4f781" config-ref="HTTP_Listener_config" path="/onprimise"/>
+		<logger level="INFO" doc:name="Logger" doc:id="9d892007-9f52-4584-980e-ee8a76fec18c" message="Flow start"/>
+		<set-payload value='#[now() as String]' doc:name="Set Payload" doc:id="5244fbe1-5ca6-43d2-8bc7-94177a8beaf7" />
+		<logger level="INFO" doc:name="Logger" doc:id="18f92ad2-499b-4525-992a-ad328ea5f395" message="flow end #[payload]"/>
+	</flow>
+</mule>
