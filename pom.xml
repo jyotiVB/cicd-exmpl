@@ -46,6 +46,7 @@
 <password>ennVee@1234</password>
 <workerType>Micro</workerType>
 <environment>Sandbox</environment>
+<server>Anypoint</server>
 <objectStoreV2>true</objectStoreV2>
 <applicationName>Azure-devops</applicationName>
 </cloudHubDeployment>
