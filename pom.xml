@@ -39,16 +39,18 @@
   <version>3.3.5</version>
   <extensions>true</extensions>
 	<configuration>
-		<cloudHubDeployment>
+<cloudHubDeployment>
 <uri>https://anypoint.mulesoft.com</uri>
+<server>Anypoint</server>
 <muleVersion>4.3.0</muleVersion>
+<applicationname>onprimise-deployment</applicationname>
 <username>jyotitest23</username>
 <password>ennVee@1234</password>
+<workers>1</workers>
 <workerType>Micro</workerType>
 <environment>Sandbox</environment>
-<server>Anypoint</server>
-<objectStoreV2>true</objectStoreV2>
-<applicationName>Azure-devops</applicationName>
+<objectStore>true</objectStore>
+
 </cloudHubDeployment>
 					<executions>
 						<execution>
