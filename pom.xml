@@ -48,7 +48,7 @@
 				<password>ennVee@1234</password>
 				<workers>${worker}</workers>
 				<workerType>${workerType}</workerType>
-				<environment>Sandbox</environment>
+				<environment>${environment}</environment>
 				<objectStore>true</objectStore>
 			</cloudHubDeployment>
 					<executions>
