@@ -19,4 +19,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean install package deploy $(MAVEN_OPTS) -DmuleDeploy -Dserver=$(server) -Druntime=$(applicationName) -Denvironment=$(environment) -Dserver=$(server) -Duri=$(uri) workerType=$(workerType)'
+    goals: 'clean install package deploy $(MAVEN_OPTS) -DmuleDeploy -Dworker=$(worker) -Dserver=$(server) -Dapp.name=$(app.name) -Denvironment=$(environment) -Dapp.runtime=$(app.runtime)  -Duri=$(uri) workerType=$(workerType)'

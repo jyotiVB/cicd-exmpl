@@ -46,7 +46,7 @@
 				<applicationname>${app.name}</applicationname>
 				<username>jyotitest23</username>
 				<password>ennVee@1234</password>
-				<workers>${worker}</workers>
+				<workers>${workers}</workers>
 				<workerType>${workerType}</workerType>
 				<environment>${environment}</environment>
 				<objectStore>true</objectStore>
